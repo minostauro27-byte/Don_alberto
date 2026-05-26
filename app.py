@@ -44,7 +44,7 @@ def post_peritajes():
 		}), 400
 	
 	nuevo = {
-		"placa": data["placa"],
+		"placa": data["placa"].upper(),
 		"hora": str(datetime.datetime.now())
 	}
 
