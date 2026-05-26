@@ -15,6 +15,24 @@ peritajes =[
 ]
 
 
+#Simulacion de el desarrollo de una nueva ruta
+
+@app.route('/api/inventario/agregar', methods=['POST'])
+def agregar_repuesto():
+    data = request.get_json()
+
+    if not data or "nombre" not in data:
+        return jsonify({"error": "Falta el nombre del repuesto"}), 400
+
+    inventario.append(data["nombre"])
+
+    return jsonify({
+        "mensaje": "Repuesto agregado",
+        "inventario": inventario
+    }), 201
+
+#----------------------------------------------------
+
 
 @app.route('/api/registros', methods=['GET'])
 def registros():
