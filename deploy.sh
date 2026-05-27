@@ -18,4 +18,4 @@ sudo systemctl restart moto-api.service
 
 #Verificar que este en vivo
 echo "Despliegue completado con exito. El estado actual es:"
-sudo systemctl status gigamoto.service | grep "Activate:"
+sudo systemctl status moto-api.service | grep "Active:"
