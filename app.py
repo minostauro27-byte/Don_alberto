@@ -34,7 +34,6 @@ def agregar_repuesto():
 @app.route('/api/registros', methods=['GET'])
 def registros():
 	return jsonify({
-	 "Division":1/0,
 	 "status":"online",
 	 "servidor":"Ubuntu de Torres Maikoll:",
  	 "hora_servidor":str(datetime.datetime.now()),
