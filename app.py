@@ -15,7 +15,6 @@ peritajes =[
 ]
 
 
-#Simulacion de el desarrollo de una nueva ruta
 
 @app.route('/api/inventario/agregar', methods=['POST'])
 def agregar_repuesto():
@@ -31,12 +30,11 @@ def agregar_repuesto():
         "inventario": inventario
     }), 201
 
-#----------------------------------------------------
-
 
 @app.route('/api/registros', methods=['GET'])
 def registros():
 	return jsonify({
+	 "Division":1/0,
 	 "status":"online",
 	 "servidor":"Ubuntu de Torres Maikoll:",
  	 "hora_servidor":str(datetime.datetime.now()),
