@@ -62,7 +62,6 @@ s3transfer==0.14.0
 service-identity==24.2.0
 setuptools==78.1.1
 six==1.17.0
-sos==4.10.2
 ssh-import-id==5.11
 systemd-python==235
 Twisted==25.5.0
