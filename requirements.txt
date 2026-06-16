@@ -46,7 +46,6 @@ ptyprocess==0.7.0
 pyasn1==0.6.3
 pyasn1_modules==0.4.1
 Pygments==2.19.2
-PyGObject==3.56.2
 PyHamcrest==2.1.0
 PyJWT==2.10.1
 pyOpenSSL==25.3.0
